@@ -12,7 +12,7 @@
 //undefine, let ashamin; 
 //symbol, const id = symbol("123");
 //symbol, const id2 = symbol("123");
-//note: when we compare the both symbol data types the output is false
+//note: when we compare the two same symbol data types the output is false
 
 
 //NON primivive - Reference type
