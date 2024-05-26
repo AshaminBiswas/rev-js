@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+    <style>
+        .parent{
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .day{
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+
+    <script>
+        const parent = document.querySelector(".parent")
+        // console.log(parent.children[1].innerHTML);
+
+        // for (let i = 0; i < parent.children.length; i++) {
+        //     console.log(parent.children[i].innerHTML);
+            
+        // }
+
+        const dayOne = document.querySelector(".day")
+        // console.log(dayOne);
+        // console.log(dayOne.parentElement);
+        // console.log(dayOne.nextElementSibling.innerHTML);
+        // console.log("nodes:", parent.childNodes);
+
+
+        //create node
+
+        const div = document.createElement('div')
+        div.className = "main";
+        div.id = Math.floor(Math.random()*10+1)
+        div.setAttribute("title", "gentep")
+        div.style.backgroundColor = "crimpson"
+        div.style.padding = "20px"
+        div.innerText = "create element"
+        console.log(div);
+        document.body.appendChild(div)
+
+    </script>
+</body>
+</html>
