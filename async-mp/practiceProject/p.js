@@ -6,9 +6,7 @@ const setInter = function(hi){
     console.log(hi)
 } 
 
-start.addEventListener("click", function () {
-      
-})
+start.addEventListener("click", function () {})
 const stop =   setInterval(setInter, 1000, "hi") 
 stopb.addEventListener("click",function(){
     console.log("Stopped")
